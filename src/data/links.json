@@ -1,0 +1,20 @@
+[
+  {
+    "platform": "twitch",
+    "label": "Twitch",
+    "handle": "twitch.tv/questmoreland",
+    "href": "https://www.twitch.tv/questmoreland"
+  },
+  {
+    "platform": "youtube",
+    "label": "YouTube",
+    "handle": "@QuestMoreLand",
+    "href": "https://www.youtube.com/@QuestMoreLand"
+  },
+  {
+    "platform": "bluesky",
+    "label": "Bluesky",
+    "handle": "questmoreland.bsky.social",
+    "href": "https://bsky.app/profile/questmoreland.bsky.social"
+  }
+]
