@@ -3,18 +3,21 @@
     "platform": "twitch",
     "label": "Twitch",
     "handle": "twitch.tv/questmoreland",
-    "href": "https://www.twitch.tv/questmoreland"
+    "href": "https://www.twitch.tv/questmoreland",
+    "icon": "/icons/PS4_Technique.png"
   },
   {
     "platform": "youtube",
     "label": "YouTube",
     "handle": "@QuestMoreLand",
-    "href": "https://www.youtube.com/@QuestMoreLand"
+    "href": "https://www.youtube.com/@QuestMoreLand",
+    "icon": "/icons/PS4_Skill.png"
   },
   {
     "platform": "bluesky",
     "label": "Bluesky",
     "handle": "questmoreland.bsky.social",
-    "href": "https://bsky.app/profile/questmoreland.bsky.social"
+    "href": "https://bsky.app/profile/questmoreland.bsky.social",
+    "icon": "/icons/PS4_Attack.png"
   }
 ]

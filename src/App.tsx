@@ -1,10 +1,12 @@
 import speedrun from './data/speedrun.json'
 import links from './data/links.json'
+import cursorImg from './assets/cursor-finger.png'
 
 const AVATAR_URL = '/avatar.webp'
 
 export default function App() {
   return (
+    <>
     <div className="layout">
 
       {/* ── Left window: profile ── */}
@@ -63,7 +65,7 @@ export default function App() {
 
         <nav>
           <ul className="menu-list">
-            {links.map(({ platform, label, handle, href }) => (
+            {links.map(({ platform, label, handle, href, icon }) => (
               <li key={platform}>
                 <a
                   className={`menu-item menu-item--${platform}`}
@@ -71,7 +73,8 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="menu-cursor" aria-hidden="true">☞</span>
+                  <img className="menu-cursor" src={cursorImg} alt="" aria-hidden="true" />
+                  <img className="menu-icon" src={icon} alt="" aria-hidden="true" />
                   <span className="menu-item-label">
                     <span>{label}</span>
                     <span className="menu-item-handle">{handle}</span>
@@ -85,5 +88,10 @@ export default function App() {
       </aside>
 
     </div>
+    <footer className="site-footer">
+      <p>&copy; {new Date().getFullYear()} QuestMoreLand</p>
+      <p>Profile image courtesy of <a href="https://www.othatsraspberry.com/" target="_blank" rel="noopener noreferrer" className="footer-link">othatsraspberry</a></p>
+    </footer>
+    </>
   )
 }

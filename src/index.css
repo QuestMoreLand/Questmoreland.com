@@ -40,8 +40,8 @@ body {
 #root {
   min-height: 100svh;
   display: flex;
+  flex-direction: column;
   align-items: stretch;
-  justify-content: center;
   padding: 1.5rem;
 }
 
@@ -52,6 +52,7 @@ body {
   align-items: stretch;
   gap: 10px;
   width: 100%;
+  flex: 1;
 }
 
 /* ── FF Window ───────────────────────────── */
@@ -208,17 +209,24 @@ body {
 }
 
 .menu-cursor {
-  font-size: 0.8rem;
-  color: transparent;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
-  width: 1rem;
-  line-height: 1;
-  transition: color 0.05s;
+  image-rendering: pixelated;
+  opacity: 0;
+  transition: opacity 0.05s;
 }
 
 .menu-item:hover .menu-cursor,
 .menu-item:focus-visible .menu-cursor {
-  color: var(--gold);
+  opacity: 1;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  image-rendering: pixelated;
 }
 
 .menu-item-label {
@@ -241,6 +249,27 @@ body {
 .menu-item:focus-visible .menu-item-handle {
   max-height: 2rem;
   opacity: 1;
+}
+
+/* ── Footer ──────────────────────────────── */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.4rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-link {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-link:hover {
+  color: var(--gold);
 }
 
 /* ── Mobile: stack vertically ────────────── */
