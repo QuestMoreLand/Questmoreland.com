@@ -10,9 +10,9 @@
   --bg:          #000000;
   --panel:       #720000;
   --panel-hover: #8c0000;
-  --bevel-lt:    #c4bcbc;
   --bevel-md:    #806868;
   --bevel-dk:    #2c0404;
+  --frame:       #e8ecf8;
   --text:        #ffffff;
   --text-dim:    #ffbbbb;
   --cyan:        #4af5ff;
@@ -60,19 +60,12 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--panel);
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
   flex: 1;
 
-  border-top:    6px solid var(--bevel-lt);
-  border-left:   6px solid var(--bevel-lt);
-  border-bottom: 6px solid var(--bevel-dk);
-  border-right:  6px solid var(--bevel-dk);
-
-  box-shadow:
-    0 0 0 2px #060002,
-    inset 3px 3px 6px rgba(255,210,210,0.10),
-    inset -3px -3px 6px rgba(0,0,0,0.22);
+  border: 2px solid var(--frame);
+  box-shadow: 0 0 0 2px #060002;
 }
 
 .ff-window--links {
@@ -112,16 +105,10 @@ body {
   flex-shrink: 0;
   width: 120px;
   height: 120px;
-  border-radius: 6px;
+  border-radius: 4px;
   overflow: hidden;
-  border-top:    4px solid var(--bevel-lt);
-  border-left:   4px solid var(--bevel-lt);
-  border-bottom: 4px solid var(--bevel-dk);
-  border-right:  4px solid var(--bevel-dk);
-  box-shadow:
-    0 0 0 2px #060002,
-    inset 2px 2px 4px rgba(255,210,210,0.10),
-    inset -2px -2px 4px rgba(0,0,0,0.20);
+  border: 2px solid var(--frame);
+  box-shadow: 0 0 0 2px #060002;
   background: #000;
 }
 
